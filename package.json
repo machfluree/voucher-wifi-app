@@ -1,0 +1,35 @@
+{
+  "name": "voucher-wifi-app",
+  "version": "1.0.0",
+  "description": "Voucher-based WiFi hotspot backend MVP",
+  "license": "ISC",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/machfluree/voucher-wifi-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/machfluree/voucher-wifi-app/issues"
+  },
+  "homepage": "https://github.com/machfluree/voucher-wifi-app#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "mongoose": "^8.15.1",
+    "node-cron": "^4.1.0",
+    "routeros-client": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.29",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
